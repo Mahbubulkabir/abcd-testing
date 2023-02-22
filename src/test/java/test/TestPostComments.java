@@ -6,19 +6,20 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LogInPage;
-import pages.ManageReviews;
+import pages.PostComments;
 import utility.ReadFromExcel;
+import utility.Utility;
 
-public class TestManagerReviews extends CommonAPI {
-
-    Logger LOG = LogManager.getLogger(TestManagerReviews.class.getName());
-    ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\abcd-GitHub-test-project\\data\\data.xlsx", "test data");
+public class TestPostComments extends CommonAPI {
+    Logger LOG = LogManager.getLogger(TestPostComments.class.getName());
+    ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\web-automation-framework-final-Bootcamp\\data\\titles.xlsx", "test data");
     String username= read.getCellValueForGivenHeaderAndKey("key","userName");
     String password= read.getCellValueForGivenHeaderAndKey("key","passWord");
+    String comments= Utility.getProperties().getProperty("comment.post");
 
     @Test
-    public void managerReviewsFromDropDown() throws InterruptedException {
-        ManageReviews manageReviews = new ManageReviews(getDriver());
+    public void postCommentsAndLikeIt() throws InterruptedException {
+        PostComments postComments = new PostComments(getDriver());
         LogInPage logInPage = new LogInPage(getDriver());
         String expectedHomePageTitle = "OrangeHRM";
         String actualHomePageTitle = getCurrentTitle();
@@ -29,13 +30,12 @@ public class TestManagerReviews extends CommonAPI {
         logInPage.typePassword(password);
         logInPage.setClickOnLogInBtm();
 
-        manageReviews.setClickOnPerformanceBtn();
-        manageReviews.setClickOnDropDownField();
-        manageReviews.setClickOnMyReviews();
+        postComments.setClickOnBuzzBtn();
+        postComments.setTypeCommentsField(comments);
+        postComments.setClickOnPostBtn();
         Thread.sleep(3000);
-        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/performance/myPerformanceReview";
+        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/buzz/viewBuzz";
         Assert.assertEquals(getURL(),expectedUrl);
-        LOG.info("my reviews page success");
-
+        LOG.info("comments and like page validation success");
     }
 }

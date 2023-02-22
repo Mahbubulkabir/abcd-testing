@@ -14,6 +14,9 @@
             <class name="test.TestLogIn"></class>
             <class name="test.TestLogOut"></class>
             <class name="test.TestAddInfoEverything"></class>
+            <class name="test.TestManagerReviews"></class>
+            <class name="test.TestMostLikePost"></class>
+            <class name="test.TestPostComments"></class>
         </classes>
     </test>
 </suite>
