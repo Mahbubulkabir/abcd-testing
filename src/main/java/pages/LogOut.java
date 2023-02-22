@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogOut extends CommonAPI {
+
     Logger LOG = LogManager.getLogger(LogOut.class.getName());
     public LogOut(WebDriver driver){
         PageFactory.initElements(driver,this);
