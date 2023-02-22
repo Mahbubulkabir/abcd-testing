@@ -17,6 +17,11 @@
             <class name="test.TestManagerReviews"></class>
             <class name="test.TestMostLikePost"></class>
             <class name="test.TestPostComments"></class>
+            <class name="test.TestPIM"></class>
+            <class name="test.TestQualifications"></class>
+            <class name="test.TestReportsOfQAEngineers"></class>
+            <class name="test.TestTimeFunctionAll"></class>
+            <class name="test.TestTimeSheets"></class>
         </classes>
     </test>
 </suite>

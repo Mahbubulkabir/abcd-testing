@@ -12,7 +12,7 @@ import utility.Utility;
 
 public class TestPostComments extends CommonAPI {
     Logger LOG = LogManager.getLogger(TestPostComments.class.getName());
-    ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\web-automation-framework-final-Bootcamp\\data\\titles.xlsx", "test data");
+    ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\abcd-GitHub-test-project\\data\\data.xlsx", "test data");
     String username= read.getCellValueForGivenHeaderAndKey("key","userName");
     String password= read.getCellValueForGivenHeaderAndKey("key","passWord");
     String comments= Utility.getProperties().getProperty("comment.post");
