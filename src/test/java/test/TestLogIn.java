@@ -17,6 +17,7 @@ public class TestLogIn extends CommonAPI {
 
     @Test
     public void logInOnHomePage() throws InterruptedException {
+
         LogInPage logInPage = new LogInPage(getDriver());
         String expectedHomePageTitle = "OrangeHRM";
         String actualHomePageTitle = getCurrentTitle();
@@ -29,6 +30,5 @@ public class TestLogIn extends CommonAPI {
         String expectedUrl ="https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
         Assert.assertEquals(getURL(), expectedUrl);
         LOG.info("login page validation success");
-
     }
 }
