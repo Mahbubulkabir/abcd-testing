@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogInPage extends CommonAPI {
+
     public LogInPage (WebDriver driver){
         PageFactory.initElements(driver,this);
     }

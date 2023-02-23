@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pages.LogInPage;
 
 public class TestLogIn extends CommonAPI {
+
     Logger LOG= LogManager.getLogger(TestLogIn.class.getName());
     @Test
     public void testLogin() throws InterruptedException {
