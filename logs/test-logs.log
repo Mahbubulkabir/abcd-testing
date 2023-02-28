@@ -72,3 +72,18 @@
 22:13:05.268 [main] INFO  test.TestTimeSheets - land to orangehrm home page successfully
 22:13:07.038 [main] INFO  pages.LogInPage - logIn page validation success
 22:13:12.833 [main] INFO  test.TestTimeSheets - employee time sheets page validation successful
+01:24:06.056 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+01:24:07.800 [main] INFO  pages.LogInPage - logIn page validation success
+01:24:10.822 [main] INFO  test.TestLogIn - login page validation success
+01:33:24.247 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+01:33:25.175 [main] INFO  pages.LogInPage - logIn page validation success
+01:33:28.189 [main] INFO  test.TestLogIn - login page validation success
+01:34:01.261 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+01:34:02.210 [main] INFO  pages.LogInPage - logIn page validation success
+01:34:05.234 [main] INFO  test.TestLogIn - login page validation success
+01:46:46.576 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+01:46:47.407 [main] INFO  pages.LogInPage - logIn page validation success
+01:46:50.425 [main] INFO  test.TestLogIn - login page validation success
+01:47:54.551 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+01:47:55.216 [main] INFO  pages.LogInPage - logIn page validation success
+01:47:58.235 [main] INFO  test.TestLogIn - login page validation success
