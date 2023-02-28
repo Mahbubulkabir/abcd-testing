@@ -1,0 +1,74 @@
+03:01:08.774 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+03:01:10.457 [main] INFO  pages.LogInPage - logIn page validation success
+03:01:13.476 [main] INFO  test.TestLogIn - login page validation success
+03:01:17.959 [main] INFO  test.TestLogOut - land to orangehrm home page successfully
+03:01:18.795 [main] INFO  pages.LogInPage - logIn page validation success
+03:02:08.150 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+03:02:09.943 [main] INFO  pages.LogInPage - logIn page validation success
+22:09:05.998 [main] INFO  test.TestLogIn - land to orangehrm home page successfully
+22:09:06.797 [main] INFO  pages.LogInPage - logIn page validation success
+22:09:09.818 [main] INFO  test.TestLogIn - login page validation success
+22:09:14.979 [main] INFO  test.TestLogOut - land to orangehrm home page successfully
+22:09:16.854 [main] INFO  pages.LogInPage - logIn page validation success
+22:09:23.563 [main] INFO  pages.LogOut - log out validation success
+22:09:26.586 [main] INFO  test.TestLogOut - log out validation success
+22:09:32.569 [main] INFO  test.TestAddInfoEverything - land to orangehrm home page successfully
+22:09:34.333 [main] INFO  pages.LogInPage - logIn page validation success
+22:09:35.768 [main] INFO  pages.HomePageInfoEverything - click on my info success
+22:09:37.713 [main] INFO  test.TestAddInfoEverything - dependents add validation success
+22:09:41.154 [main] INFO  test.TestAddInfoEverything - land to orangehrm home page successfully
+22:09:42.665 [main] INFO  pages.LogInPage - logIn page validation success
+22:09:44.174 [main] INFO  pages.HomePageInfoEverything - click on my info success
+22:09:46.270 [main] INFO  test.TestAddInfoEverything - address add validation success
+22:09:51.473 [main] INFO  test.TestAddInfoEverything - land to orangehrm home page successfully
+22:09:52.224 [main] INFO  pages.LogInPage - logIn page validation success
+22:09:54.764 [main] INFO  pages.HomePageInfoEverything - click on my info success
+22:09:56.788 [main] INFO  test.TestAddInfoEverything - immigration record added validation success
+22:10:03.470 [main] INFO  test.TestAddInfoEverything - land to orangehrm home page successfully
+22:10:05.415 [main] INFO  pages.LogInPage - logIn page validation success
+22:10:06.979 [main] INFO  pages.HomePageInfoEverything - click on my info success
+22:10:09.072 [main] INFO  pages.HomePageInfoEverything - contact info add validation success
+22:10:09.079 [main] INFO  test.TestAddInfoEverything - emergency contact add page validation success
+22:10:13.217 [main] INFO  test.TestAddInfoEverything - land to orangehrm home page successfully
+22:10:14.658 [main] INFO  pages.LogInPage - logIn page validation success
+22:10:16.138 [main] INFO  pages.HomePageInfoEverything - click on my info success
+22:10:18.941 [main] INFO  test.TestAddInfoEverything - job details page validation success
+22:10:22.672 [main] INFO  test.TestManagerReviews - land to orangehrm home page successfully
+22:10:24.397 [main] INFO  pages.LogInPage - logIn page validation success
+22:10:29.885 [main] INFO  test.TestManagerReviews - my reviews page success
+22:10:34.051 [main] INFO  test.TestMostLikePost - land to orangehrm home page successfully
+22:10:35.569 [main] INFO  pages.LogInPage - logIn page validation success
+22:10:39.713 [main] INFO  test.TestMostLikePost - share post page validation successful
+22:10:42.996 [main] INFO  test.TestPostComments - land to orangehrm home page successfully
+22:10:44.524 [main] INFO  pages.LogInPage - logIn page validation success
+22:10:49.016 [main] INFO  test.TestPostComments - comments and like page validation success
+22:10:52.664 [main] INFO  test.TestPIM - land to orangehrm home page successfully
+22:10:54.090 [main] INFO  pages.LogInPage - logIn page validation success
+22:11:01.222 [main] INFO  test.TestPIM - employee details page validation success
+22:11:05.466 [main] INFO  test.TestQualifications - land to orangehrm home page successfully
+22:11:07.256 [main] INFO  pages.LogInPage - logIn page validation success
+22:11:09.426 [main] INFO  pages.HomePageInfoEverything - click on my info success
+22:11:14.344 [main] INFO  test.TestQualifications - add work experience success
+22:11:19.014 [main] INFO  test.TestManagerReviews - land to orangehrm home page successfully
+22:11:19.540 [main] INFO  pages.LogInPage - logIn page validation success
+22:11:41.908 [main] INFO  test.TestTimeFunctionAll - land to orangehrm home page successfully
+22:11:42.569 [main] INFO  pages.LogInPage - logIn page validation success
+22:11:48.909 [main] INFO  test.TestTimeFunctionAll - Customers project info validation success
+22:11:54.228 [main] INFO  test.TestTimeFunctionAll - land to orangehrm home page successfully
+22:11:56.037 [main] INFO  pages.LogInPage - logIn page validation success
+22:12:01.424 [main] INFO  test.TestTimeFunctionAll - configuration page validation success
+22:12:05.305 [main] INFO  test.TestTimeFunctionAll - land to orangehrm home page successfully
+22:12:06.945 [main] INFO  pages.LogInPage - logIn page validation success
+22:12:09.700 [main] INFO  test.TestTimeFunctionAll - summery report page validation success
+22:12:16.989 [main] INFO  test.TestTimeFunctionAll - land to orangehrm home page successfully
+22:12:18.995 [main] INFO  pages.LogInPage - logIn page validation success
+22:12:24.078 [main] INFO  test.TestTimeFunctionAll - view selected employee time sheet page validation success
+22:12:31.823 [main] INFO  test.TestTimeFunctionAll - land to orangehrm home page successfully
+22:12:33.766 [main] INFO  pages.LogInPage - logIn page validation success
+22:12:41.574 [main] INFO  test.TestTimeFunctionAll - row add page validation success
+22:12:48.546 [main] INFO  test.TestTimeFunctionAll - land to orangehrm home page successfully
+22:12:49.215 [main] INFO  pages.LogInPage - logIn page validation success
+22:12:57.573 [main] INFO  test.TestTimeFunctionAll - row delete validation success
+22:13:05.268 [main] INFO  test.TestTimeSheets - land to orangehrm home page successfully
+22:13:07.038 [main] INFO  pages.LogInPage - logIn page validation success
+22:13:12.833 [main] INFO  test.TestTimeSheets - employee time sheets page validation successful
