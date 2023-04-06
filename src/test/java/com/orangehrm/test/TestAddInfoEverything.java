@@ -1,12 +1,12 @@
-package test;
+package com.orangehrm.test;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HomePageInfoEverything;
-import pages.LogInPage;
+import com.orangehrm.pages.HomePageInfoEverything;
+import com.orangehrm.pages.LogInPage;
 import utility.ReadFromExcel;
 
 public class TestAddInfoEverything extends CommonAPI {

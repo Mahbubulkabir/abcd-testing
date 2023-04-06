@@ -1,25 +1,24 @@
-package test;
+package com.orangehrm.test;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LogInPage;
-import pages.LogOut;
+import com.orangehrm.pages.LogInPage;
+import com.orangehrm.pages.ManageReviews;
 import utility.ReadFromExcel;
 
-public class TestLogOut extends CommonAPI {
+public class TestManagerReviews extends CommonAPI {
 
-    Logger LOG = LogManager.getLogger(TestLogOut.class.getName());
+    Logger LOG = LogManager.getLogger(TestManagerReviews.class.getName());
     ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\abcd-GitHub-test-project\\data\\data.xlsx", "test data");
     String username= read.getCellValueForGivenHeaderAndKey("key","userName");
     String password= read.getCellValueForGivenHeaderAndKey("key","passWord");
 
     @Test
-    public void logOutFromOrangehrmPage() throws InterruptedException {
-
-        LogOut logOut = new LogOut(getDriver());
+    public void managerReviewsFromDropDown() throws InterruptedException {
+        ManageReviews manageReviews = new ManageReviews(getDriver());
         LogInPage logInPage = new LogInPage(getDriver());
         String expectedHomePageTitle = "OrangeHRM";
         String actualHomePageTitle = getCurrentTitle();
@@ -29,16 +28,14 @@ public class TestLogOut extends CommonAPI {
         logInPage.typeUserName(username);
         logInPage.typePassword(password);
         logInPage.setClickOnLogInBtm();
-        Thread.sleep(3000);
 
-        logOut.setClickOnProfileBtn();
+        manageReviews.setClickOnPerformanceBtn();
+        manageReviews.setClickOnDropDownField();
+        manageReviews.setClickOnMyReviews();
         Thread.sleep(3000);
-        logOut.setClickOnLogOut();
-        Thread.sleep(3000);
-        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/performance/myPerformanceReview";
         Assert.assertEquals(getURL(),expectedUrl);
-        LOG.info("log out validation success");
-
+        LOG.info("my reviews page success");
 
     }
 }

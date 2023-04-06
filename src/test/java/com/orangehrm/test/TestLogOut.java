@@ -1,24 +1,25 @@
-package test;
+package com.orangehrm.test;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LogInPage;
-import pages.ManageReviews;
+import com.orangehrm.pages.LogInPage;
+import com.orangehrm.pages.LogOut;
 import utility.ReadFromExcel;
 
-public class TestManagerReviews extends CommonAPI {
+public class TestLogOut extends CommonAPI {
 
-    Logger LOG = LogManager.getLogger(TestManagerReviews.class.getName());
+    Logger LOG = LogManager.getLogger(TestLogOut.class.getName());
     ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\abcd-GitHub-test-project\\data\\data.xlsx", "test data");
     String username= read.getCellValueForGivenHeaderAndKey("key","userName");
     String password= read.getCellValueForGivenHeaderAndKey("key","passWord");
 
     @Test
-    public void managerReviewsFromDropDown() throws InterruptedException {
-        ManageReviews manageReviews = new ManageReviews(getDriver());
+    public void logOutFromOrangehrmPage() throws InterruptedException {
+
+        LogOut logOut = new LogOut(getDriver());
         LogInPage logInPage = new LogInPage(getDriver());
         String expectedHomePageTitle = "OrangeHRM";
         String actualHomePageTitle = getCurrentTitle();
@@ -28,14 +29,16 @@ public class TestManagerReviews extends CommonAPI {
         logInPage.typeUserName(username);
         logInPage.typePassword(password);
         logInPage.setClickOnLogInBtm();
-
-        manageReviews.setClickOnPerformanceBtn();
-        manageReviews.setClickOnDropDownField();
-        manageReviews.setClickOnMyReviews();
         Thread.sleep(3000);
-        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/performance/myPerformanceReview";
+
+        logOut.setClickOnProfileBtn();
+        Thread.sleep(3000);
+        logOut.setClickOnLogOut();
+        Thread.sleep(3000);
+        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
         Assert.assertEquals(getURL(),expectedUrl);
-        LOG.info("my reviews page success");
+        LOG.info("log out validation success");
+
 
     }
 }

@@ -1,12 +1,12 @@
-package test;
+package com.orangehrm.test;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LogInPage;
-import pages.ReportsOfQAEngineers;
+import com.orangehrm.pages.LogInPage;
+import com.orangehrm.pages.ReportsOfQAEngineers;
 import utility.ReadFromExcel;
 
 public class TestReportsOfQAEngineers extends CommonAPI {
