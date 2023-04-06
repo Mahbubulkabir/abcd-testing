@@ -51,10 +51,10 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
   <testcase classname="base.CommonAPI" name="@AfterMethod afterEachTestMethod" time="0.0">
     <skipped/>
   </testcase> <!-- @AfterMethod afterEachTestMethod -->
-  <testcase classname="test.AdminPageTest" name="AddJobTitle" time="0.0">
+  <testcase classname="com.orangehrm.test.AdminPageTest" name="AddJobTitle" time="0.0">
     <skipped/>
   </testcase> <!-- AddJobTitle -->
-  <testcase classname="test.AdminPageTest" name="ChangePasswordCheckBox" time="0.0">
+  <testcase classname="com.orangehrm.test.AdminPageTest" name="ChangePasswordCheckBox" time="0.0">
     <skipped/>
   </testcase> <!-- ChangePasswordCheckBox -->
 </testsuite> <!-- orangehrm tests -->

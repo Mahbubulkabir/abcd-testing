@@ -1,11 +1,11 @@
-package test;
+package com.orangehrm.test;
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AdminPage;
-import pages.LogInPage;
+import com.orangehrm.pages.AdminPage;
+import com.orangehrm.pages.LogInPage;
 import utility.ReadFromExcel;
 
 

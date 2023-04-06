@@ -1,23 +1,25 @@
-package test;
+package com.orangehrm.test;
 
 import base.CommonAPI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LogInPage;
-import pages.PimPage;
+import com.orangehrm.pages.LogInPage;
+import com.orangehrm.pages.PostComments;
 import utility.ReadFromExcel;
+import utility.Utility;
 
-public class TestPIM extends CommonAPI {
-    Logger LOG = LogManager.getLogger(TestPIM.class.getName());
+public class TestPostComments extends CommonAPI {
+    Logger LOG = LogManager.getLogger(TestPostComments.class.getName());
     ReadFromExcel read = new ReadFromExcel("C:\\Users\\munna\\InteliiJ\\abcd-GitHub-test-project\\data\\data.xlsx", "test data");
     String username= read.getCellValueForGivenHeaderAndKey("key","userName");
     String password= read.getCellValueForGivenHeaderAndKey("key","passWord");
+    String comments= Utility.getProperties().getProperty("comment.post");
 
     @Test
-    public void findOutEmployeeById() throws InterruptedException {
-        PimPage pimPage = new PimPage(getDriver());
+    public void postCommentsAndLikeIt() throws InterruptedException {
+        PostComments postComments = new PostComments(getDriver());
         LogInPage logInPage = new LogInPage(getDriver());
         String expectedHomePageTitle = "OrangeHRM";
         String actualHomePageTitle = getCurrentTitle();
@@ -27,17 +29,13 @@ public class TestPIM extends CommonAPI {
         logInPage.typeUserName(username);
         logInPage.typePassword(password);
         logInPage.setClickOnLogInBtm();
-        Thread.sleep(3000);
 
-        pimPage.setClickOnPimBtn();
-        pimPage.typeEmployeeIdField("0221");
-        pimPage.setClickOnSearchBtn();
+        postComments.setClickOnBuzzBtn();
+        postComments.setTypeCommentsField(comments);
+        postComments.setClickOnPostBtn();
         Thread.sleep(3000);
-        // pimPage.setClickOnRecordedName();
-        //  Thread.sleep(3000);
-        String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList";
-        Assert.assertEquals(getURL(), expectedUrl);
-        LOG.info("employee details page validation success");
-
+        String expectedUrl= "https://opensource-demo.orangehrmlive.com/web/index.php/buzz/viewBuzz";
+        Assert.assertEquals(getURL(),expectedUrl);
+        LOG.info("comments and like page validation success");
     }
 }
